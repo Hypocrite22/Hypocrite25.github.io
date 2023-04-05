@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历程</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .eat1,
+        .eat2,
+        .eat3,
+        .eat4,
+        .eat5 {
+            float: left;
+            width: 1200px;
+            /* height: 280px; */
+            margin: 50px 230px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .pt1,
+        .pt2,
+        .pt3,
+        .pt4,
+        .pt5,
+        .pt6,
+        .pt7,
+        .pt8,
+        .pt9,
+        .pt10,
+        .pt11,
+        .pt12,
+        .pt13,
+        .pt14,
+        .pt15,
+        .pt16,
+        .pt17,
+        .pt18,
+        .pt19,
+        .pt20,
+        .pt21 {
+            height: 100%;
+            width: 430px;
+
+        }
+
+        .picture-box {
+            width: 100%;
+            position: relative;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .picture-box img {
+            width: 100%;
+            height: auto;
+            z-index: 4;
+            float: left;
+        }
+
+        .picture-box .caption {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            -webkit-transition: all 0.45s ease-in-out;
+            -moz-transition: all 0.45s ease-in-out;
+            -o-transition: all 0.45s ease-in-out;
+            -ms-transition: all 0.45s ease-in-out;
+            transition: all 0.45s ease-in-out;
+        }
+
+        .picture-box .caption .blur {
+            background-color: rgba(0, 0, 0, 0.55);
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            position: absolute;
+        }
+
+        .picture-box .caption .caption-text {
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            text-align: center;
+            top: 35%;
+        }
+
+        .picture-box:hover .caption {
+            opacity: 1;
+        }
+
+        .picture-box {
+            width: 100%;
+            position: relative;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .picture-box img {
+            width: 100%;
+            height: auto;
+            z-index: 4;
+            float: left;
+        }
+
+        .picture-box .caption {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            -webkit-transition: all 0.45s ease-in-out;
+            -moz-transition: all 0.45s ease-in-out;
+            -o-transition: all 0.45s ease-in-out;
+            -ms-transition: all 0.45s ease-in-out;
+            transition: all 0.45s ease-in-out;
+        }
+
+        .picture-box .caption .blur {
+            background-color: rgba(0, 0, 0, 0.55);
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            position: absolute;
+        }
+
+        .picture-box .caption .caption-text {
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            text-align: center;
+            top: 35%;
+        }
+
+        .tex1,
+        .tex3,
+        .tex5 {
+            margin-top: -250px;
+        }
+
+        .tex2,
+        .tex4 {
+            margin-top: -280px;
+        }
+
+        .po1,
+        .po2,
+        .po3,
+        .po4,
+        .po5 {
+            line-height: 30px;
+            padding: 10px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 20px;
+        }
+
+        .mm {
+            float: right;
+            background-color: #e93232;
+            height: 100%;
+            width: 50px;
+        }
+
+        .box3 {
+            float: left;
+            width: 100%;
+            height: 2000px;
+            /* background-color: rgb(98, 241, 124); */
+            margin: 10px 0;
+        }
+
+        .pt1 {
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .pt2 {
+            margin-top: -300px;
+            margin-right: 100px;
+            float: right;
+        }
+
+        .pt3 {
+            margin-top: 30px;
+            margin-right: 200px;
+            float: right;
+        }
+
+        .pt4 {
+            margin-top: 120px;
+            margin-right: 200px;
+            float: right;
+        }
+
+        .pt5 {
+            margin-top: 30px;
+            margin-left: 120px;
+            float: left;
+        }
+
+        .pt6 {
+            margin-top: 30px;
+            margin-right: 200px;
+            float: right;
+        }
+
+        .pt7 {
+            margin-top: 30px;
+            margin-right: 200px;
+            float: right;
+        }
+
+        .pt8 {
+            margin-top: 50px;
+            margin-left: 100px;
+            float: left;
+        }
+
+        .pt9 {
+            margin-top: 200px;
+            margin-left: 40px;
+            float: left;
+        }
+
+        .pt10 {
+            margin-top: 50px;
+            margin-right: 100px;
+            float: right;
+        }
+
+        .pt11 {
+            margin-top: 50px;
+            margin-left: 250px;
+            float: left;
+        }
+
+        .pt12 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt12 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt13 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt14 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt15 {
+            margin-top: -800px;
+            margin-right: -350px;
+            float: right;
+        }
+
+        .pt16 {
+            margin-top: 80px;
+            margin-right: -300px;
+            float: right;
+        }
+
+        .pt17 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt18 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt19 {
+            margin-top: 80px;
+            margin-right: 470px;
+            float: right;
+        }
+
+        .pt20 {
+            margin-top: 30px;
+            margin-right: 170px;
+            float: right;
+        }
+
+        .pt21 {
+            margin-top: 80px;
+            margin-right: 430px;
+            float: right;
+        }
+
+        .a111 {
+            width: 100%;
+            position: fixed;
+            margin: 0px;
+
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .tishi {
+            position: relative;
+            width: 260px;
+            height: 50px;
+            float: right;
+            background-color: #0fa2ec90;
+            margin-right: 300px;
+            font-size: 24px;
+            border-radius: 25px;
+        }
+
+        .back {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background-color: #0b86fa;
+            border-radius: 25px;
+            margin-top: 5800px;
+            margin-left: 1200px;
+        }
+
+        .p7 {
+            position: absolute;
+            margin: 0 auto;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../img/body.jpg" class="a111">
+    <!-- <div class="box3">
+        <div class="eat1"> -->
+    <!-- <div class="tishi">
+        <p>&nbsp&nbsp把鼠标放到照片上哦！</p>
+
+    </div> -->
+    <div class="pt1">
+        <div class="picture-box">
+            <img src="../img/c1.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>我们的认识</h1>
+                    <h4>缘分的开始，
+                        你自告奋勇的当了管理员，嘻嘻
+                    </h4>
+                    <p>还记得我的绷带狗吗?很庆幸没有错过
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt2">
+        <div class="picture-box">
+            <img src="../img/c2.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>养宠物</h1>
+                    <h4>一开始我老是忘了，你还说我</h4>
+                    <p>后面都在用微信聊天了，但是有些时候用qq聊天的时候，我还是去喂了他们的。这个火龙果养好啦！</p>
+                    <p>我们两个一起看了两部电影，一部《白蛇》，还有就是一部《你的名字》，很开心！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt3">
+        <div class="picture-box">
+            <img src="../img/c3.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>QQ的一起听呀！</h1>
+                    <h4>12个小时16分钟</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt4">
+        <div class="picture-box">
+            <img src="../img/c4.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>第一次的网易云一起听</h1>
+                    <h4>我的耳机分你一半，哈哈哈！</h4>
+                    <p>我网易云的唯一一个粉丝，哈哈哈哈！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt5">
+        <div class="picture-box">
+            <img src="../img/c5.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>一起听了好久呀</h1>
+                    <h4>谢谢你的陪伴!希望可以继续陪伴我！</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        alert("耳机分你一半，哈哈哈哈！")
+    </script>
+</body>
+
+</html>

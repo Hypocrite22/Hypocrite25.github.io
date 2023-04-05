@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tofsc</title>
+  <style>
+    .box1 {
+      height: 400px;
+      width: 400px;
+      margin-top: 130px;
+      margin-left: 550px;
+      border-radius: 200px;
+      background-color: #ec08085c;
+
+    }
+
+    .box2 {
+      height: 200px;
+      width: 200px;
+      margin-top: 390px;
+      margin-left: 850px;
+      border-radius: 100px;
+      background-color: #23ec0844;
+    }
+
+    .box3 {
+      height: 300px;
+      width: 300px;
+      margin-top: -180px;
+      margin-left: 350px;
+      border-radius: 150px;
+      background-color: #2e08ec50;
+    }
+
+    .box4 {
+      height: 100px;
+      width: 100px;
+      margin-top: -600px;
+      margin-left: 1050px;
+      border-radius: 50px;
+      background-color: #ec08ca54;
+    }
+
+    .box1,
+    .box2 {
+      -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+
+    @-webkit-keyframes slide-top {
+      0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+
+      100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+      }
+    }
+
+    @keyframes slide-top {
+      0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+
+      100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+      }
+    }
+
+    .box4,
+    .box3 {
+      -webkit-animation: rotate-in-hor 1s;
+      animation: rotate-in-hor 1s;
+    }
+
+    @-webkit-keyframes rotate-in-hor {
+      0% {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        opacity: 0;
+      }
+
+      100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        opacity: 1;
+      }
+    }
+
+    @keyframes rotate-in-hor {
+      0% {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        opacity: 0;
+      }
+
+      100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        opacity: 1;
+      }
+    }
+
+    a {
+
+      color: aliceblue;
+      font-size: 18px;
+      text-align: center;
+      list-style: none;
+      text-decoration: none;
+
+
+    }
+
+    .t1 {
+      float: left;
+      margin-top: 100px;
+      margin-left: 40px;
+      text-align: center;
+    }
+
+    .t2 {
+      float: left;
+      margin-top: 60px;
+      margin-left: 80px;
+      text-align: center;
+    }
+
+    .t4 {
+      float: left;
+      margin-top: 60px;
+      margin-left: 50px;
+      text-align: center;
+    }
+
+    .a111 {
+      width: 100%;
+      position: fixed;
+      /* margin: 0px; */
+
+      background-size: 100% 100%;
+      background-attachment: fixed;
+    }
+
+    .p1 {
+      width: 100%;
+      height: 100%;
+
+      position: fixed;
+      z-index: -1;
+    }
+  </style>
+  <script>
+
+  </script>
+</head>
+
+<body>
+  <img src="../img/mmm.jpg" class="p1">
+
+  <a href="photh.html">
+    <div class="box1">
+      <div class="t1">
+        <h2>打开心动模式</h2>
+      </div>
+      <div class="t2">
+        <h4>是一次又一次的累计</h4>
+      </div>
+    </div>
+  </a>
+
+
+  <a href="love.html">
+    <div class="box3">
+
+      <div class="t3">
+        <h2>最后点这个</h2>
+      </div>
+    </div>
+  </a>
+
+  <div class="box4"></div>
+  <a href="help.html">
+    <div class="box2">
+      <div class="t4">
+        <h2>你的陪伴！</h2>
+      </div>
+    </div>
+  </a>
+
+
+</body>
+
+</html>

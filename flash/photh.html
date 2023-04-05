@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>照片呀</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .eat1,
+        .eat2,
+        .eat3,
+        .eat4,
+        .eat5 {
+            float: left;
+            width: 1200px;
+            /* height: 280px; */
+            margin: 50px 230px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .pt1,
+        .pt2,
+        .pt3,
+        .pt4,
+        .pt5,
+        .pt6,
+        .pt7,
+        .pt8,
+        .pt9,
+        .pt10,
+        .pt11,
+        .pt12,
+        .pt13,
+        .pt14,
+        .pt15,
+        .pt16,
+        .pt17,
+        .pt18,
+        .pt19,
+        .pt20,
+        .pt21 {
+            height: 100%;
+            width: 430px;
+
+        }
+
+        .picture-box {
+            width: 100%;
+            position: relative;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .picture-box img {
+            width: 100%;
+            height: auto;
+            z-index: 4;
+            float: left;
+        }
+
+        .picture-box .caption {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            -webkit-transition: all 0.45s ease-in-out;
+            -moz-transition: all 0.45s ease-in-out;
+            -o-transition: all 0.45s ease-in-out;
+            -ms-transition: all 0.45s ease-in-out;
+            transition: all 0.45s ease-in-out;
+        }
+
+        .picture-box .caption .blur {
+            background-color: rgba(0, 0, 0, 0.55);
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            position: absolute;
+        }
+
+        .picture-box .caption .caption-text {
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            text-align: center;
+            top: 35%;
+        }
+
+        .picture-box:hover .caption {
+            opacity: 1;
+        }
+
+        .picture-box {
+            width: 100%;
+            position: relative;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .picture-box img {
+            width: 100%;
+            height: auto;
+            z-index: 4;
+            float: left;
+        }
+
+        .picture-box .caption {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            -webkit-transition: all 0.45s ease-in-out;
+            -moz-transition: all 0.45s ease-in-out;
+            -o-transition: all 0.45s ease-in-out;
+            -ms-transition: all 0.45s ease-in-out;
+            transition: all 0.45s ease-in-out;
+        }
+
+        .picture-box .caption .blur {
+            background-color: rgba(0, 0, 0, 0.55);
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            position: absolute;
+        }
+
+        .picture-box .caption .caption-text {
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            text-align: center;
+            top: 35%;
+        }
+
+        .tex1,
+        .tex3,
+        .tex5 {
+            margin-top: -250px;
+        }
+
+        .tex2,
+        .tex4 {
+            margin-top: -280px;
+        }
+
+        .po1,
+        .po2,
+        .po3,
+        .po4,
+        .po5 {
+            line-height: 30px;
+            padding: 10px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 20px;
+        }
+
+        .mm {
+            float: right;
+            background-color: #e93232;
+            height: 100%;
+            width: 50px;
+        }
+
+        .box3 {
+            float: left;
+            width: 100%;
+            height: 2000px;
+            /* background-color: rgb(98, 241, 124); */
+            margin: 10px 0;
+        }
+
+        .pt1 {
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .pt2 {
+            margin-top: -300px;
+            margin-right: 100px;
+            float: right;
+        }
+
+        .pt3 {
+            margin-top: 30px;
+            margin-right: 200px;
+            float: right;
+        }
+
+        .pt4 {
+            margin-top: 120px;
+            margin-right: 200px;
+            float: right;
+        }
+
+        .pt5 {
+            margin-top: 30px;
+            margin-left: 120px;
+            float: left;
+        }
+
+        .pt6 {
+            margin-top: 30px;
+            margin-right: 200px;
+            float: right;
+        }
+
+        .pt7 {
+            margin-top: 30px;
+            margin-right: 200px;
+            float: right;
+        }
+
+        .pt8 {
+            margin-top: 50px;
+            margin-left: 100px;
+            float: left;
+        }
+
+        .pt9 {
+            margin-top: 200px;
+            margin-left: 40px;
+            float: left;
+        }
+
+        .pt10 {
+            margin-top: 50px;
+            margin-right: 100px;
+            float: right;
+        }
+
+        .pt11 {
+            margin-top: 50px;
+            margin-left: 250px;
+            float: left;
+        }
+
+        .pt12 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt12 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt13 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt14 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt15 {
+            margin-top: -800px;
+            margin-right: -350px;
+            float: right;
+        }
+
+        .pt16 {
+            margin-top: 80px;
+            margin-right: -300px;
+            float: right;
+        }
+
+        .pt17 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt18 {
+            margin-top: 80px;
+            margin-right: 230px;
+            float: right;
+        }
+
+        .pt19 {
+            margin-top: 80px;
+            margin-right: 470px;
+            float: right;
+        }
+
+        .pt20 {
+            margin-top: 30px;
+            margin-right: 170px;
+            float: right;
+        }
+
+        .pt21 {
+            margin-top: 80px;
+            margin-right: 430px;
+            float: right;
+        }
+
+        .a111 {
+            width: 100%;
+            position: fixed;
+            margin: 0px;
+
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .tishi {
+            position: relative;
+            width: 260px;
+            height: 50px;
+            float: right;
+            background-color: #0fa2ec90;
+            margin-right: 300px;
+            font-size: 24px;
+            border-radius: 25px;
+        }
+
+        .back {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background-color: #0b86fa;
+            border-radius: 25px;
+            margin-top: 5800px;
+            margin-left: 1200px;
+        }
+
+        .p7 {
+            position: absolute;
+            margin: 0 auto;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../img/bodyy.jpg" class="a111">
+    <!-- <div class="box3">
+        <div class="eat1"> -->
+    <!-- <div class="tishi">
+        <p>&nbsp&nbsp把鼠标放到照片上哦！</p>
+
+    </div> -->
+    <div class="pt1">
+        <div class="picture-box">
+            <img src="../img/m1.jpeg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>第一张照片</h1>
+                    <h4>才加上你的好友，想看看你长什么样</h4>
+                    <p>国庆快乐!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt2">
+        <div class="picture-box">
+            <img src="../img/m2.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>你发给我的第一张照片</h1>
+                    <h4>访问空间访问多了,哈哈哈哈哈.</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt3">
+        <div class="picture-box">
+            <img src="../img/m3.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>你发给我的第二张照片</h1>
+                    <h4>那个时候都还不是很熟悉呀！</h4>
+                    <p>现在看着还是觉得好好看!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt4">
+        <div class="picture-box">
+            <img src="../img/m4.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>1月7号</h1>
+                    <h4>你微信一开始还用的其他号加的我，哈哈哈。</h4>
+                    <p>你微信的第一张照片,好看的嘞!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt5">
+        <div class="picture-box">
+            <img src="../img/m5.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>1月15号</h1>
+                    <h4>是我喜欢的高马尾!</h4>
+                    <p>虽然是影子，但是那个时候还是好开心呀！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt6">
+        <div class="picture-box">
+            <img src="../img/m6.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>2月6号</h1>
+                    <h4>那天我在钓鱼,一条都没有钓上,哈哈哈.</h4>
+                    <p>后面你无聊做了第一个视频</p>
+                    <p>但是第一次让我狠狠的心动了！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt7">
+        <div class="picture-box">
+            <img src="../img/m7.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月1号</h1>
+                    <h4>你和朋友去彩灯博物馆玩啦!</h4>
+                    <p>还有其他好看的照片</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt8">
+        <div class="picture-box">
+            <img src="../img/m8.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月1号晚上9点59分</h1>
+                    <h4>你说这个特效好吓人,哈哈哈哈.</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt9">
+        <div class="picture-box">
+            <img src="../img/m9.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月3号</h1>
+                    <h4>去公园玩啦，那天很开心呀</h4>
+                    <p>只能在你后面悄悄地拍你的背影</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt10">
+        <div class="picture-box">
+            <img src="../img/m10.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月6号</h1>
+                    <h4>你说头发吹炸了,但是还是好好看!</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt11">
+        <div class="picture-box">
+            <img src="../img/m11.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月7号</h1>
+                    <h4>阿姨买的"耳朵",好可爱,哈哈哈!</h4>
+                    <p>你也不知道那个叫什么哈哈哈</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt12">
+        <div class="picture-box">
+            <img src="../img/m12.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月8号</h1>
+                    <h4>美美的，玩起了特效</h4>
+                    <p>还有其他照片我就独享了，不再你看了,嘻嘻!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt13">
+        <div class="picture-box">
+            <img src="../img/m13.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月9号</h1>
+                    <h4>给我看唇釉,长知识啦!</h4>
+                    <p>你后面还说怎么想的问一个男生，</p>
+                    <p>我很开心你给我分享的呀！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt14">
+        <div class="picture-box">
+            <img src="../img/m14.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月10号</h1>
+                    <h4>你第一次喝酒!第一次给我打视频,激动死我了,结果是大冒险输了,哎</h4>
+                    <p>当时接电话的时候还有些紧张呢哈哈哈哈</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt15">
+        <div class="picture-box">
+            <img src="../img/m15.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月11号</h1>
+                    <h4>去彩灯大世界,你好好看呀!</h4>
+                    <p>还有好多照片</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt16">
+        <div class="picture-box">
+            <img src="../img/m16.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月17号</h1>
+                    <h4>室友帮你编的不知道叫什么名字的头发</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt17">
+        <div class="picture-box">
+            <img src="../img/m17.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月18号</h1>
+                    <h4>尝试裙子啦!</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt18">
+        <div class="picture-box">
+            <img src="../img/m18.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>3月25号</h1>
+                    <h4>偷偷拍的小翻,谢谢你陪我玩,那天一起吃了饭!</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt19">
+        <div class="picture-box">
+            <img src="../img/m19.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h4></h4>
+                    <h1>3月30号</h1>
+                    <p>某个自习!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt20">
+        <div class="picture-box">
+            <img src="../img/m20.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>第一张合影</h1>
+                    <h4>很喜欢</h4>
+                    <p>虽然是是偷拍的，但是好评!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt20">
+        <div class="picture-box">
+            <img src="../img/m21.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>吃麻辣烫</h1>
+                    <h4></h4>
+                    <p>偷偷拍你背影</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt21">
+        <div class="picture-box">
+            <img src="../img/m22.jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>数模课偷拍</h1>
+                    <h4></h4>
+                    <p>一起吃了第二次饭</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="index1.html">
+        <div class="back">
+            <p id="p7">
+                <font color="black">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp返回
+                </font>
+            </p>
+        </div>
+    </a>
+
+    </div>
+    <script>
+        alert("把鼠标放到照片上哦！")
+    </script>
+</body>
+
+</html>
